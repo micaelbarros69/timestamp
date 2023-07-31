@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adicionar Timestamp à Imagem</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <input type="file" id="imageInput" accept="image/*">
+        <canvas id="timestampCanvas" width="400" height="300"></canvas>
+        <div>
+            <label for="timestampText">Texto do Timestamp 1:</label>
+            <input type="text" id="timestampText" placeholder="Digite o primeiro texto do timestamp">
+        </div>
+        <div>
+            <label for="timestampText2">Texto do Timestamp 2:</label>
+            <input type="text" id="timestampText2" placeholder="Digite o segundo texto do timestamp">
+        </div>
+        <div>
+            <label for="timestampFormat">Formato do Timestamp:</label>
+            <select id="timestampFormat">
+        <option value="datetime">Data e Hora</option>
+        <option value="date">Apenas Data</option>
+        <option value="time">Apenas Hora</option>
+      </select>
+        </div>
+        <button id="addTimestampButton" disabled>Adicionar Timestamp</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
